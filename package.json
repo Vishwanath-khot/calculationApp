@@ -1,0 +1,30 @@
+{
+  "name": "calculatorapp",
+  "version": "1.0.0",
+  "description": "Calculator Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test":"karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "karma-cli": "^2.0.0",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "jasmine": "^3.8.0",
+    "jasmine-core": "^3.8.0",
+    "karma": "^6.3.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.3",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-jasmine": "^4.0.1"
+  }
+}

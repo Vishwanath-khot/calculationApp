@@ -1,0 +1,133 @@
+body {
+  line-height: 1;
+}
+
+input,
+button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #d8e5e5;
+}
+
+.calc {
+  margin: 50px auto;
+  padding: 15px;
+  width: 320px;
+  background: #3d4543;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+
+.calc-display {
+  margin: 0 0 20px;
+  padding: 3px;
+  background: #222;
+  border-radius: 3px;
+}
+
+.calc-display-input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 0 8px;
+  font: 26px/35px UbuntuMono, monospace;
+  color: #444;
+  text-align: right;
+  background-clip: padding-box;
+}
+
+.calc-row:before,
+.calc-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.calc-button {
+  float: left;
+  padding: 0;
+  margin: 0 0 0 7px;
+  width: 74px;
+  font: 15px/35px UbuntuMono, monospace;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background: #313131;
+  background-clip: padding-box !important;
+}
+.calc-row .calc-button {
+  width: 101px;
+  margin-bottom: 10px;
+}
+
+.calc-button-yellow {
+  background: #ffa70c;
+  width: 100% !important;
+}
+.calc-button-yellow:active {
+  background: #ffa70c;
+}
+
+.calc-button-big {
+  font-size: 16px;
+}
+
+Label {
+  color: bisque;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.calc-result {
+  color: aquamarine !important;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  width: inherit;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.theader{
+  background-color: #3d4543;
+  color: #d8e5e5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.table-title{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}

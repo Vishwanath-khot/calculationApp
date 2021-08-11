@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <script src="app.js"></script>
+    <script src="../controller/calculatorController.js"></script>
+    <script src="../services/calculatorService.js"></script>
+    <script src="../directives/validate.js"></script>
+    <script src="../directives/calculate.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div ng-app="calculatorApp" ng-controller="CalculatorCtrl">
+        <div>
+            <form class="calc" name="calculatorForm">
+                <p class="calc-display">
+                    <Label for="input1">Input 1</Label>
+                    <input type="text" name="input1" id="input1" validate ng-model="calculator.input1"
+                        class="calc-display-input" required>
+                    <span style="color: red;"
+                        ng-show="calculatorForm.input1.$invalid && calculatorForm.input1.$touched">
+                        Enter required positive number.</span>
+                </p>
+                <p class="calc-display">
+                    <Label for="input2">Input 2</Label>
+                    <input type="text" name="input2" id="input2" validate ng-model="calculator.input2"
+                        class="calc-display-input" required>
+                    <span style="color: red;"
+                        ng-show="calculatorForm.input2.$invalid && calculatorForm.input2.$touched">
+                        Enter required positive number.</span>
+                </p>
+                <p class="calc-row"><button type="submit" class="calc-button calc-button-yellow calc-button-big"
+                        ng-click="onCalculate()" ng-disabled="calculatorForm.$invalid">Calculate</button>
+                </p>
+                <p class="calc-result">
+                    <calculate></calculate>
+                </p>
+            </form>
+            <div ng-if="calculatorResponse.length > 0">
+                <h1 class="table-title">Previous Results along with current</h1>
+                <table>
+                    <th class="theader">Input 1</th>
+                    <th class="theader">Input 2</th>
+                    <th class="theader"> Result</th>
+                    <tr ng-repeat="t in calculatorResponse">
+                        <td>{{ t.input1 }}</td>
+                        <td>{{ t.input2 }}</td>
+                        <td>{{ t.result }}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
