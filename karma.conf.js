@@ -21,11 +21,8 @@ module.exports = function(config) {
       'public/app.js',
       'public/controller/calculatorController.js',
       'public/services/*.js',
-      'public/directives/*.js',
       'test/calculatorController-spec.js',
-      'test/calculatorService-spec.js',
-      // 'test/validate-spec.js',
-      'test/calculate-spec.js',
+      'test/calculatorService-spec.js'
 
 
     ],

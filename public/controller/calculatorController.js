@@ -4,9 +4,10 @@ calculatorApp.controller("CalculatorCtrl", [
     function ($scope, CalculatorService) {
       let ctrl = $scope;
       ctrl.calculator = {};
+
+
       ctrl.calculate = function () {
         CalculatorService.saveData(ctrl).then(function (res) {
-          console.log(res);
         });
       };
   
