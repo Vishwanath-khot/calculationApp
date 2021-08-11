@@ -1,0 +1,16 @@
+{
+  "name": "calculatorapp",
+  "description": "Calculator Application",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
